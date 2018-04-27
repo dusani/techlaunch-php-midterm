@@ -1,0 +1,163 @@
+1: Lion bit my finger!
+
+Part 1: Lion will bite your finger exactly 50% of the time. First, write a function isBitten() that returns TRUE with 50% probability, and FALSE otherwise. Hint: You may find the rand() function useful.
+Part 2: Below the function, write code to generate a webpage that displays “Lion bit your finger!” or “Lion did not bite your finger!” using the isBitten() function.
+
+2: Counting words
+
+Part 1: Write a function countWords($str) that takes any string of characters and finds the number of times each word occurs. You should ignore the distinction between capital and lowercase letters, and do not have to worry about dealing with characters that are not letters. Hint: Create an associative array mapping word keys to the number of times they occur. You will need to look at PHP's string functions to split a sentence into words.
+Hint 2: The print_r($array_name) function is useful for examining the contents of an array.
+Part 2: In the same file, write a form consisting of a single text field and a submit button. The “action” attribute to the form should be the same page that the form is on (don’t hard code, use $_SERVER[‘PHP_SELF’]). The form should send the contents of the text field via GET.
+Upon submitting the form, you should be redirected to the same page, but the URL should contain the string from the text field as a GET request normally behaves.
+Side note: Prevent security vulnerabilities with $_SERVER[‘PHP_SELF’]. For more information, take a look here: http://www.html-form-guide.com/php-form/php-form-action- self.html
+Part 3: Check for the existence of a GET request. If a GET request exists with the name of the input field that you made in Part 2, run the contents of the request through your countWords($str) function. Take the output array of the function, and display an HTML table of words and the number of times they occur. Make the table sorted by decreasing number of occurrences.
+
+3:
+
+Let's write a user class with the tools we have  acquired. This class will contain the first and last name of each user and will be able to say hello to anyone who uses our application. Make sure that:
+1) The attributes are private.
+2) Create a public interface to set and get our attributes
+3) Say hello!
+4) Use a constructor to set up the initial state of your object.
+
+4:
+What will be the output of the following code ?
+define(“x”,“5”);
+$x = x + 10;
+echo x;
+?>
+A) Error 
+B) 5 --> Answer
+C) 10 
+D) 15
+
+5:
+Which of these statements is true?
+A) PHP interfaces to the MySQL database,and you should transfer any data in Oracle or Sybase to
+MySQL if you want to use PHP on the data.
+B) PHP interfaces to a number of relational databases such as MySQL, Oracle and Sybase. A wrapper layer is provided so that code written for one database can easily be transferred to another if you later switch your database engine.
+C) PHP interfaces to a number of relational databases such as MySQL, Oracle and Sybase but the interface differs in each case. --> Answer
+D) There’s little code in PHP to help you interface to databases, but there’s no reason why you can’t write such code if you want to.
+
+6:
+Assume that your php file ‘index.php’ is in location c:/apache/htdocs/phptutor/index.php. If you used
+$_SERVER[‘PHP_SELF’] function in your page, then what is the return value of this function?
+A) phptutor/index.php
+B) /phptutor/index.php --> Answer
+C) c:/apache/htdocs/phptutor/index.php
+D) index.php
+
+7:
+Are there regular expressions in PHP?
+A) Yes regular expressions use Perl- like conventions
+B) Yes PHP supports two different types of regular expressions: POSIX extended and Perl Compatible Regular Expressions (PCRE). --> Answer
+C) Yes regular expressions use the POSIX standard
+D) No PHP uses “glob” style matching only
+
+8:
+Father of PHP? Extra credit if you can tell me who the other guys are.
+A) Larry Wall --> Created the Perl Programming Language
+B) Rasmus Lerdorf --> Answer
+C) James Gosling --> Founder of the Java Programming Language
+D) Guido Van Rossum --> Author of the Python Programming Language
+
+9:
+Which of the following will not combine strings $s1 and $s2 into a single string?
+A) $s1 + $s2 --> Answer
+B) “{$s1}{$s2}”
+C) $s1.$s2
+D) implode(‘ ’, array($s1,$s2))
+
+10:
+The output of the following script would be? $somevar=15;
+function addit () {
+GLOBAL $somevar;
+$somevar++;
+echo “somevar is $somevar”; }
+addit ();
+A) somevar is 15
+B) somevar is 16 --> Answer
+C) somevar is 1
+D) somevar is $ somevar
+
+11:
+Identify the variable scope that is not supported by PHP ?
+A) Local variables
+B) Function parameters
+C) Hidden variables --> Answer
+D) Global variables
+
+12:
+Which function includes the specified file even if the statement evaluates to false.
+A) include () --> Answer
+B) require ()
+C) both of above 
+D) None of above
+
+13:
+What will be the output of the code below?
+<?php
+$arr = array(5 => 1, 12 => 2);
+$arr[] = 56;
+$arr[“x”] = 42; unset($arr);
+echo var_dump($arr); ?>
+A) 42 
+B) 56 
+C) Null --> Answer
+D) x=42
+
+Ques 14a:
+What will be the output of the code below?
+<?php
+echo $_SERVER[‘REMOTE_ADDR’];
+?>
+A) shows the IP address of the webserver
+B) shows the IP address of the local system
+C) shows the IP address of the visitor --> Answer
+D) None of the above
+
+Ques 14b:
+mysql_connect( ) does not take following parameter.
+A) database name --> Answer
+B) database host 
+C) user ID
+D) password
+
+15:
+PHP code is embedded directly into XHTML document?
+A) False 
+B) True --> Answer
+
+
+16:
+Variable scope on which a variable does not loose its value when the function exists and uses that value if the function is called again is: ?
+A) Local
+B) function parameter 
+C) static --> Answer
+D) None of above
+
+17:
+Which of the following is used to check if a function has already been defined?
+A) bool function_exists(functionname) --> Answer
+B) bool func_exist(functioname)
+C) bool f_exists(functionname)
+
+18:
+Can a one line comment begin with pound sign(#) in php?
+A) True --> Answer
+B) False
+C) None of above
+C) None of above
+
+19:
+Is it possible to submit a form without a submit button?
+A) Yes --> Answer
+B) No 
+C) I have no idea… This is a tough one.
+
+20:
+All variables in PHP start with which symbol?
+A) & 
+B) $ --> Answer
+C) @ 
+D) $$
